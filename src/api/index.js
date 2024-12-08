@@ -9,8 +9,3 @@ export const getWeatherDataForLocation = async (lat, lon) => {
   const response = await fetch(`${baseURL}&q=${lat},${lon}&aqi=yes`);
   return await response.json();
 };
-
-export const getWeatherofLondon = async()=>{
-  const response = await fetch(`${baseURL}&q=london&aqi=yes`);
-  return await response.json();
-}
